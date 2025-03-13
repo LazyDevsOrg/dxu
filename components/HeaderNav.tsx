@@ -8,12 +8,11 @@ export default function HeaderNav() {
 
             <div className="flex flex-row gap-10 items-center">
                 <Link className="!text-[#fff] !font-bold !text-[40px]" href="/">DXU</Link>
-            </div>
-
-            <div className="flex flex-row gap-6 items-center">
-                {NavLinks.map((nav, index) => (
-                    <Link key={index} className="!text-[#fff] !font-light !text-[20px]" href={nav.url}>{nav.name}</Link>
-                ))}
+                <div className="flex flex-row gap-6 items-center">
+                    {NavLinks.map((nav, index) => (
+                        <Link key={index} className="!text-[#fff] !font-light !text-[20px]" href={nav.url}>{nav.name}</Link>
+                    ))}
+                </div>
             </div>
 
             <div className="flex flex-row gap-3 items-center !text-[#fff]">
